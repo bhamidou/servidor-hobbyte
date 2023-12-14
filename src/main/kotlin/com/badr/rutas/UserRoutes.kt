@@ -1,5 +1,6 @@
 package com.badr.rutas
 
+import com.badr.controllers.UserController
 import com.badr.models.Respuesta
 import com.badr.models.UserModel.UserLogin
 import com.badr.models.UserModel.User
@@ -16,24 +17,21 @@ var rolesAdmin = arrayListOf<String>("admin","user")
 var rolesUser = arrayListOf<String>("user")
 
 
-fun Route.userRouting(){  //Esta ruta se incluirá en el archivo Routing.
+fun Route.userRouting() {
 //    val tokenManager = TokenManager(HoconApplicationConfig((ConfigFactory.load())))
-   val tokenManager = TokenManager()
+    val tokenManager = TokenManager()
+
 
     route("/login") {
-        post{
+        post {
             val us = call.receive<UserLogin>()
-            val usuario = ConexionEstatica.login(us.username, us.password)
+            UserController.login(call, us)
+        }
+    }
+    route("/registrar") {
+        post {
+            val us = call.receive<UserLogin>()
 
-            if (usuario == null) {
-                call.response.status(HttpStatusCode.NotFound)
-                return@post call.respond(Respuesta("Unauthorized", HttpStatusCode.NotFound.value))
-            }else{
-                val token = tokenManager.generateJWTToken(User(usuario.userId, usuario.username,  usuario.password))
-                call.respond(mapOf("token" to token, "username" to usuario.username))
-                call.response.status(HttpStatusCode.Accepted)
-                return@post call.respond(mapOf("token" to token, "username" to usuario.username))
-            }
         }
     }
 }

@@ -4,11 +4,11 @@ object Constantes {
     val servidor = "localhost"
     val puerto = 3333
 
-    var bbdd = "ktor"
+    var bbdd = "hobbyte"
     var usuario = "root"
     var passwd = "1234"
 
-    var TablaPersonas = "badr-hobbyte"
+    var TablaUser = "usuarios"
 
     var ficheroBitacora = "bitacora.txt"
 }

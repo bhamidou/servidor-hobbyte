@@ -11,6 +11,8 @@ fun Application.configureRouting() {
             call.respondText("Hello World!")
         }
         userRouting()
+        tableroRoutes()
+        partidaRoutes()
     }
 
 }

@@ -28,10 +28,10 @@ fun Route.userRouting() {
             UserController.login(call, us)
         }
     }
-    route("/registrar") {
+    route("/signup") {
         post {
             val us = call.receive<UserLogin>()
-
+            UserController.signup(call, us)
         }
     }
 }

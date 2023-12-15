@@ -8,7 +8,7 @@ object Constantes {
     var usuario = "root"
     var passwd = "1234"
 
-    var TablaUser = "usuarios"
+    var TablaUser = "usuario"
 
     var ficheroBitacora = "bitacora.txt"
 }

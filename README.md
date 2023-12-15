@@ -29,3 +29,33 @@ status 404:
     "status": 404
 }
 ```
+
+## Signup
+
+POST /signup
+BODY:
+
+```json
+{
+    "username": "chubaca",
+    "password": "1234"
+}
+```
+
+RESPUESTAS:
+
+status 201:
+```json
+{
+  "message": "Usuario creado",
+  "status": 201
+}
+```
+
+status 417:
+```json
+{
+  "message": "Error al crear el usuario",
+  "status": 417
+}
+```

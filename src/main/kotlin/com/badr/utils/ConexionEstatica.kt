@@ -55,7 +55,7 @@ object ConexionEstatica {
         var user: User? = null
         try {
             abrirConexion()
-            val sentencia = "SELECT * FROM " + Constantes.TablaUser + " WHERE user = ? AND password = ?"
+            val sentencia = "SELECT * FROM " + Constantes.TablaUser + " WHERE username = ? AND password = ?"
             val pstmt = conexion!!.prepareStatement(sentencia)
             // pstmt.setInt(1, 30000);
             pstmt.setString(1, username)
@@ -63,7 +63,7 @@ object ConexionEstatica {
             registros = pstmt.executeQuery()
             while (ConexionEstatica.registros!!.next()) {
                 user = User(
-                    registros!!.getInt("id"), registros!!.getString("user"), registros!!.getString("password"))
+                    registros!!.getInt("id"), registros!!.getString("username"), registros!!.getString("password"))
             }
         } catch (ex: SQLException) {
             println(ex)
@@ -71,8 +71,6 @@ object ConexionEstatica {
 
             cerrarConexion()
         }
-        println("llego")
-        println(user)
         return user
     }
 
@@ -131,23 +129,23 @@ object ConexionEstatica {
         }
         return cuantos
     }
-
+*/
     // ----------------------------------------------------------
-    fun insertarPersona(dni: String, nombre: String, clave: String, tfno: String): Int {
+    fun insertarUser(username: String, password: String): Int {
         var cod = 0
-        val sentencia = ("INSERT INTO " + Constantes.TablaPersonas + " VALUES ('" + dni + "'," + "'" + nombre + "','"
-                + clave + "','" + tfno + "')")
+        val sentencia = ("INSERT INTO " + Constantes.TablaUser + " (username, password) VALUES ('" + username + "'," + "'" + password + "')")
         try {
             abrirConexion()
             sentenciaSQL!!.executeUpdate(sentencia)
         } catch (sq: SQLException) {
             cod = sq.errorCode
+            println(sq)
         } finally {
             cerrarConexion()
         }
         return cod
     }
-
+/*
     // ----------------------------------------------------------
     fun insertarPersonaBind(dni: String?, nombre: String?, clave: String?, tfno: String?): Int {
         var cod = 0

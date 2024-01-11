@@ -21,10 +21,17 @@ fun Route.tableroRoutes(){
         }
     }
 
-    route("/tablero/{id}") {
-        get {
-            var id = call.parameters["id"]
-            TableroController.show(call, id)
+    route("/tablero") {
+        post {
+            TableroController.create(call)
         }
     }
+    route("/tablero/{size}") {
+        post {
+            TableroController.create(call)
+        }
+    }
+
+
+
 }

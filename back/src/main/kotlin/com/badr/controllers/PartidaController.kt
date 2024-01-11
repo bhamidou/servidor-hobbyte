@@ -23,7 +23,6 @@ object PartidaController {
         if(insert==0){
 
 
-
             call.response.status(HttpStatusCode.Created)
             call.respond(Respuesta("Partida creada correctamente", HttpStatusCode.Created.value))
         }else{

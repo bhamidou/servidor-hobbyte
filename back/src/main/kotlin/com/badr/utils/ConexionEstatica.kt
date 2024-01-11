@@ -1,5 +1,6 @@
 package com.badr.utils
 
+import com.badr.models.PruebaModel.Prueba
 import com.badr.models.UserModel.User
 import java.sql.*
 
@@ -298,4 +299,6 @@ object ConexionEstatica {
         }
         return conseguido
     }*/
+
+
 }

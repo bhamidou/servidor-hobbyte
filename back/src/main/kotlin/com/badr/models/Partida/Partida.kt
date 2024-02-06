@@ -8,6 +8,7 @@ class Partida{
     var id_usuario: Int = 0
     var estado: Int = 0
 
+    constructor(){}
     constructor(id: Int, id_usuario: Int, estado: Int) {
         this.id = id
         this.id_usuario = id_usuario

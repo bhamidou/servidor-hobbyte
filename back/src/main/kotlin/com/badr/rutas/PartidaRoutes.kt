@@ -8,8 +8,23 @@ import io.ktor.server.routing.*
 fun Route.partidaRoutes(){
 
     route("/partida") {
+        get {
+            PartidaController.showAll(call)
+        }
         post {
-            PartidaController.create(call)
+            PartidaController.newPartida(call)
+        }
+        route("/{id}") {
+            get{
+                PartidaController.show(call)
+            }
         }
     }
+
+    route("/mis-partida") {
+        get {
+            PartidaController.show(call)
+        }
+    }
+
 }

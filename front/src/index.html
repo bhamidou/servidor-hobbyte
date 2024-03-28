@@ -4,14 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hobbyte</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
 </head>
 <body>
     <h1>Login</h1>
-    <label for="">Usuario</label>
+    <label for="">Email</label>
     <input type="text" id="user" required>
     <label for="">Contraseña</label>
     <input type="password" id="password" required>
-    <script src="../dist/login.js"></script>
+    <button id="loginBtn">Iniciar sesión</button>
+    <br>
+    <button>
+        <a type="button" href="../src/signup/">Registrarse</a>
+    </button>
+    <br>
+    <button>
+        <a type="button" href="../src/confirm/">Confirmar cuenta</a>
+    </button>
+    <script type="module" src="app.js"></script>
 </body>
 </html>

@@ -6,7 +6,7 @@ BODY:
 
 ```json
 {
-  "username": "badr",
+  "email": "badr@gmail.com",
   "password": "1234"
 }
 ```
@@ -16,8 +16,9 @@ status 200:
 
 ```json
 {
-  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJodHRwOi8vMTkyLjE2OC4wLjEyMDo4MDkwL3J1dGFzVmFyaWFzIiwiaXNzIjoiaHR0cDovLzE5Mi4xNjguMC4xMjA6ODA5MCIsInVzZXJuYW1lIjoiYmFkciJ9.BWmxg9oZaSfExmhZp1KnT5EJYrYvrYMGNwr9XTujD8Y",
-  "username": "badr"
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJodHRwOi8vMTkyLjE2OC4wLjEyMDo4MDkwL3J1dGFzVmFyaWFzIiwiaXNzIjoiaHR0cDovLzE5Mi4xNjguMC4xMjA6ODA5MCIsImVtYWlsIjoiYmFkckBiYWRyLmNvbSJ9.kwgLa0qzP4T5marWNQkEgpoHKhXB8ZKulbNMKJOsPc0",
+  "email": "badr@badr.com",
+  "nombre": "badr"
 }
 ```
 
@@ -37,7 +38,7 @@ BODY:
 
 ```json
 {
-    "username": "chubaca",
+    "email": "chubaca@gmail.com",
     "password": "1234"
 }
 ```

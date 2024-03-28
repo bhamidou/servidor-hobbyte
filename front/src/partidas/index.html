@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+
+    <title>partidas</title>
+</head>
+<body>
+    <nav>
+        <a href="../partidas/">Ver partidas</a>
+        <a href="../users">Ver usuarios</a>
+    </nav>
+    <h1>Mis partidas</h1>
+    <button id="newPartida">Crear partida</button>
+    <br>
+    <label for="inputSize">Puedes indicar el tamaño del tablero</label>
+    <input type="text" placeholder="Tamaño tablero" id="inputSize">
+    <script type="module" src="app.js"></script>
+    <table>
+        <thead>
+            <th>ID</th>
+            <th>Estado<th>
+        </thead>
+        <tbody id="tbody">
+        </tbody>
+    </table>
+
+</body>
+</html>

@@ -1,4 +1,4 @@
-package com.badr.models.PruebaModel
+package com.badr.models.Prueba
 
 import kotlinx.serialization.Serializable
 

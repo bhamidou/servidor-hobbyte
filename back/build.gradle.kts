@@ -28,6 +28,8 @@ repositories {
 }
 
 dependencies {
+    implementation("io.ktor:ktor-server-cors:$ktor_version")
+    implementation("org.apache.commons:commons-email:1.5")
     implementation("io.ktor:ktor-server-swagger:$ktor_version")
     implementation("mysql:mysql-connector-java:8.0.28")
     implementation("io.ktor:ktor-server-auth-jvm")

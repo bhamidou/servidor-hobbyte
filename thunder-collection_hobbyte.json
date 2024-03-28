@@ -1,0 +1,214 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "hobbyte",
+    "dateExported": "2024-02-19T18:46:24.052Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "fc5c2d06-8c21-4048-9270-40495bd14049",
+            "name": "partidas",
+            "containerId": "",
+            "created": "2024-02-18T16:27:45.519Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "c0c54f83-c7bd-40aa-a63e-1bf2f299f42f",
+            "name": "users",
+            "containerId": "",
+            "created": "2024-02-18T16:27:45.520Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "a3204292-72ec-4589-ae94-559d8da865f5",
+            "name": "heroes",
+            "containerId": "",
+            "created": "2024-02-19T12:07:46.728Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "2c8f5110-29cc-41e2-b1da-8c42818fb4e7",
+            "colId": "6df3460b-d353-4222-91b2-f509fab689f8",
+            "containerId": "fc5c2d06-8c21-4048-9270-40495bd14049",
+            "name": "ver pruebas de una partida",
+            "url": "http://localhost:8080/mis-partidas",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-02-18T16:27:45.519Z",
+            "modified": "2024-02-19T15:54:20.531Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJodHRwOi8vMC4wLjAuMDo4MDgwLyIsImlzcyI6Imh0dHA6Ly8wLjAuMC4wOjgwODAiLCJpZCI6MTJ9.W3E0NEH2fGAdEl3xWJYkaG5sEJ0qWX8AOUyD8RFXubc"
+            },
+            "tests": []
+        },
+        {
+            "_id": "6ca88e64-9952-4786-83d2-347d161fbf80",
+            "colId": "6df3460b-d353-4222-91b2-f509fab689f8",
+            "containerId": "fc5c2d06-8c21-4048-9270-40495bd14049",
+            "name": "ver partidas ",
+            "url": "localhost:8080/mis-partidas",
+            "method": "GET",
+            "sortNum": 15000,
+            "created": "2024-02-18T22:48:46.696Z",
+            "modified": "2024-02-18T22:51:10.722Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJodHRwOi8vMC4wLjAuMDo4MDgwLyIsImlzcyI6Imh0dHA6Ly8wLjAuMC4wOjgwODAiLCJpZCI6MX0.eIAZvUB73TfornW3Ohlv-KxwXpyZK_tB16mre39Fxrg"
+            },
+            "tests": []
+        },
+        {
+            "_id": "ecfb8209-7a98-4190-98da-92b93fd6ff9d",
+            "colId": "6df3460b-d353-4222-91b2-f509fab689f8",
+            "containerId": "fc5c2d06-8c21-4048-9270-40495bd14049",
+            "name": "crear partida",
+            "url": "localhost:8080/partida",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-02-18T16:27:45.520Z",
+            "modified": "2024-02-18T16:29:10.209Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJodHRwOi8vMC4wLjAuMDo4MDgwLyIsImlzcyI6Imh0dHA6Ly8wLjAuMC4wOjgwODAiLCJpZCI6M30.Ovx-UPEKwVErEShr5pf_hVUuDQPZhY6pv93J2Q7UQi4"
+            },
+            "tests": []
+        },
+        {
+            "_id": "9c3ca404-bbf8-4cb3-87de-561876382bb6",
+            "colId": "6df3460b-d353-4222-91b2-f509fab689f8",
+            "containerId": "fc5c2d06-8c21-4048-9270-40495bd14049",
+            "name": "destapar",
+            "url": "localhost:8080/partida/510/destapar",
+            "method": "GET",
+            "sortNum": 25000,
+            "created": "2024-02-18T16:30:29.601Z",
+            "modified": "2024-02-18T19:27:22.685Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJodHRwOi8vMC4wLjAuMDo4MDgwLyIsImlzcyI6Imh0dHA6Ly8wLjAuMC4wOjgwODAiLCJpZCI6M30.Ovx-UPEKwVErEShr5pf_hVUuDQPZhY6pv93J2Q7UQi4"
+            },
+            "tests": []
+        },
+        {
+            "_id": "a47a3e42-7c44-40a9-9cbe-0247ff5ac308",
+            "colId": "6df3460b-d353-4222-91b2-f509fab689f8",
+            "containerId": "c0c54f83-c7bd-40aa-a63e-1bf2f299f42f",
+            "name": "localhost:8080/login",
+            "url": "localhost:8080/login",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-02-18T16:27:45.522Z",
+            "modified": "2024-02-18T22:51:04.562Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"badr@badr.com\",\n  \"password\": \"1234\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "18c6b9f0-3375-4755-b033-8ca4d8bc9d36",
+            "colId": "6df3460b-d353-4222-91b2-f509fab689f8",
+            "containerId": "c0c54f83-c7bd-40aa-a63e-1bf2f299f42f",
+            "name": "signup",
+            "url": "localhost:8080/signup",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-02-18T16:27:45.523Z",
+            "modified": "2024-02-19T09:02:23.971Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"nombre\":\"badr\",\n  \"email\": \"badr2hamidou2@gmail.com\",\n  \"password\": \"1234\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "53df0806-5809-4fda-91d4-eb2cb91fe3eb",
+            "colId": "6df3460b-d353-4222-91b2-f509fab689f8",
+            "containerId": "c0c54f83-c7bd-40aa-a63e-1bf2f299f42f",
+            "name": "new code confirmation",
+            "url": "http://localhost:8080/check-code",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-02-18T16:27:45.524Z",
+            "modified": "2024-02-19T18:42:48.588Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"confirmation\":\" 9BvBVrXNLi\",\n  \"email\": \"badr2hamidou2@gmail.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e661c289-d0cf-4200-869d-a8bd0e873fe0",
+            "colId": "6df3460b-d353-4222-91b2-f509fab689f8",
+            "containerId": "c0c54f83-c7bd-40aa-a63e-1bf2f299f42f",
+            "name": "show users",
+            "url": "http://localhost:8080/users",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2024-02-18T16:27:45.525Z",
+            "modified": "2024-02-19T17:02:32.779Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJodHRwOi8vMC4wLjAuMDo4MDgwLyIsImlzcyI6Imh0dHA6Ly8wLjAuMC4wOjgwODAiLCJpZCI6MX0.eIAZvUB73TfornW3Ohlv-KxwXpyZK_tB16mre39Fxrg"
+            },
+            "tests": []
+        },
+        {
+            "_id": "7700b98c-1494-48de-bd7d-4fcbf7f553a9",
+            "colId": "6df3460b-d353-4222-91b2-f509fab689f8",
+            "containerId": "c0c54f83-c7bd-40aa-a63e-1bf2f299f42f",
+            "name": "show users Copy",
+            "url": "http://localhost:8080/user/11",
+            "method": "DELETE",
+            "sortNum": 80000,
+            "created": "2024-02-19T17:52:16.460Z",
+            "modified": "2024-02-19T17:52:28.987Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJodHRwOi8vMC4wLjAuMDo4MDgwLyIsImlzcyI6Imh0dHA6Ly8wLjAuMC4wOjgwODAiLCJpZCI6MX0.eIAZvUB73TfornW3Ohlv-KxwXpyZK_tB16mre39Fxrg"
+            },
+            "tests": []
+        },
+        {
+            "_id": "7c6ad6cf-72cf-468b-8ff5-334b4e880a19",
+            "colId": "6df3460b-d353-4222-91b2-f509fab689f8",
+            "containerId": "a3204292-72ec-4589-ae94-559d8da865f5",
+            "name": "ver heroes",
+            "url": "localhost:8080/mis-heroes/50",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2024-02-19T12:07:55.840Z",
+            "modified": "2024-02-19T12:08:47.424Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJodHRwOi8vMC4wLjAuMDo4MDgwLyIsImlzcyI6Imh0dHA6Ly8wLjAuMC4wOjgwODAiLCJpZCI6MX0.eIAZvUB73TfornW3Ohlv-KxwXpyZK_tB16mre39Fxrg"
+            },
+            "tests": []
+        }
+    ]
+}
